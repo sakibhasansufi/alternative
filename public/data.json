@@ -1,0 +1,68 @@
+[
+    {
+        "id" : 1,
+        "image": "https://www.01net.com/en/app/uploads/2023/11/How-to-Unblock-Quillbot.jpg",
+        "title": "Grammar Error in QuillBot",
+        "name": "QuillBot",
+        "brand": "Learneo Inc",
+        "reason": "QuillBot has so much error in their grammar checking. So I would suggest people to use grammarly for better grammar checking",
+        "date": "25 April, 2024",
+        "user_name": "Nadir On the Go",
+        "user_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT81o4CU3NfnWxpjFy15uf7cDJg53X-bd5cIA&usqp=CAU"
+      },
+      {
+        "id" : 2,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdR3QL1QGsYPNl46lqf_ZUvSN5YOb-bjuC5g&usqp=CAU",
+        "title": "ChatGpt can not show recent data",
+        "name": "ChatGpt",
+        "brand": "OpenAi",
+        "reason": "I have faced some issue when I tried to collect data from recent time. As chatgpt can not load data and sometimes it shows a very wrong result.",
+        "date": "21 April, 2024",
+        "user_name": "HappyTechie123",
+        "user_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6P27xqLnGpjqOdClPtzXM8q5AXL3jLjKjwQ&usqp=CAU"
+      },
+      {
+        "id" : 3,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png",
+        "title": "Complexity in Adobe Illustrator",
+        "name": "Adobe Illustrator",
+        "brand": "Adobe Inc.",
+        "reason": "Illustrator is cool. But it comes with a cost and moreover you will need a good pc to run it. But I am not professional people like me just need a handy software. So there are a lot of web software available so I do not use it any more. It saves my memory.",
+        "date": "15 April, 2024",
+        "user_name": "Obito Uchia",
+        "user_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx45IFSK1W9h-rA3_ASWL8RM7zptJm5qFC6g&usqp=CAU"
+      },
+      {
+        "id" : 4,
+        "image": "https://www.waca.associates/en/wp-content/uploads/2021/02/photoshop-history-860x573.jpg",
+        "title": "Why should I pay when there is software available like photoshop",
+        "name": "Adobe PhotoShop",
+        "brand": "Adobe Inc.",
+        "reason": "There is a lot of free software avalible in the web. So buying photoshop license will not be good decision",
+        "date": "01 April, 2024",
+        "user_name": "Toni Kroos",
+        "user_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx0k8C_Jc65s8KG0ZUlpsRaChrlOrfARYVOw&usqp=CAU"
+      },
+      {
+        "id" : 5,
+        "image": "https://example.com/image1.jpg",
+        "title": "For light usage in your daily avoid use Word",
+        "name": "Microsoft Word",
+        "brand": "Microsoft Inc.",
+        "reason": "For every daisy task we dependent on the word. But for me I am a light user and I do not want to bother with the save button . So I rather choose Google docs",
+        "date": "2024-05-10",
+        "user_name": "Tonali",
+        "user_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXUv6ZrOiS4QQaWCBlsw2zbj64_mcv8Bk-ZCLwDSWLznS_Iu2bxfnet_eaChBoikcPoCc&usqp=CAU"
+      },
+      {
+        "id" : 6,
+        "image": "https://example.com/image1.jpg",
+        "title": "Google chrome eat lot of RAM",
+        "name": "Google Chrome",
+        "brand": "Google LLC.",
+        "reason": "Google is by far the most popular web browser. But it takes a lot of RAM. If you have a low spec device , it will suck maximum of your ram. You can use other browser like brave.",
+        "date": "2024-05-10",
+        "user_name": "Steven Gerrard",
+        "user_image": "https://example.com/user1.jpg"
+      }
+]

@@ -32,7 +32,7 @@ const Slider = () => {
                 <div className=" w-full absolute left-0 h-[540px] lg:h-[670px] -z-40"></div>
                 <div className="w-2/3 lg:w-1/3 text-center lg:text-left space-y-2 lg:space-y-5 py-5">
                     
-                    <p className="text-black text-xl font-medium md:text-lg">AltMart is a free service that helps you find better alternatives to the products you love and hate.</p>
+                    <p className=" text-xl font-medium md:text-lg">AltMart is a free service that helps you find better alternatives to the products you love and hate.</p>
                     
                 </div>
                 <CarouselMain />
