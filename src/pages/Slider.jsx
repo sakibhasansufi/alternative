@@ -29,10 +29,10 @@ const Slider = () => {
     return (
         <div>
             <div className="max-w-7xl mx-auto h-[540px] lg:h-[670px] px-3 lg:px-10 flex flex-col lg:flex-row items-center justify-center overflow-hidden gap-5 lg:gap-10 relative">
-                <div className="bg-[#f3f9fc] w-full absolute left-0 h-[540px] lg:h-[670px] -z-40"></div>
+                <div className=" w-full absolute left-0 h-[540px] lg:h-[670px] -z-40"></div>
                 <div className="w-2/3 lg:w-1/3 text-center lg:text-left space-y-2 lg:space-y-5 py-5">
                     
-                    <p className="text-[#616161] text-xl font-semibold md:text-lg">AltMart is a free service that helps you find better alternatives to the products you love and hate.</p>
+                    <p className="text-black text-xl font-medium md:text-lg">AltMart is a free service that helps you find better alternatives to the products you love and hate.</p>
                     
                 </div>
                 <CarouselMain />
