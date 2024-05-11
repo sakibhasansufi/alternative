@@ -21,7 +21,7 @@ const Navbar = () => {
                         {
                             user ? <div >
                                 <li><NavLink to='/queries'>Recommendation for me</NavLink></li>
-                                <li><NavLink to='/queries'>My queries</NavLink></li>
+                                <li><NavLink to='/myQueries'>My queries</NavLink></li>
                                 <li><NavLink to='/queries'>My Recommendation</NavLink></li>
                                 <li><a onClick={logOut}>Log out</a></li>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
                     {
                         user ? <div className="flex">
                             <li><NavLink to='/queries'>Recommendation for me</NavLink></li>
-                            <li><NavLink to='/queries'>My queries</NavLink></li>
+                            <li><NavLink to='/myQueries'>My queries</NavLink></li>
                             <li><NavLink to='/queries'>My Recommendation</NavLink></li>
                             <li><a onClick={logOut}>Log out</a></li>
 

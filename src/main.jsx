@@ -13,6 +13,8 @@ import AuthProvider from './providers/AuthProvider';
 import { Toaster } from 'react-hot-toast';
 import Error from './pages/Error';
 import Queries from './pages/Queries';
+import MyQueries from './pages/MyQueries';
+import PrivateRoute from './pages/PrivateRoute'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +36,10 @@ const router = createBrowserRouter([
       {
         path : '/queries',
         element : <Queries></Queries>
+      },
+      {
+        path : '/myQueries',
+        element : <PrivateRoute><MyQueries></MyQueries></PrivateRoute>
       }
     ]
   },
