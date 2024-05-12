@@ -15,6 +15,7 @@ import Error from './pages/Error';
 import Queries from './pages/Queries';
 import MyQueries from './pages/MyQueries';
 import PrivateRoute from './pages/PrivateRoute'
+import AddQueries from './pages/AddQueries';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path : '/myQueries',
         element : <PrivateRoute><MyQueries></MyQueries></PrivateRoute>
+      },
+      {
+        path : '/add',
+        element : <AddQueries></AddQueries>
       }
     ]
   },

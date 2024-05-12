@@ -7,7 +7,7 @@ const Banner = () => {
             <img src={alternative} alt="" />
             <section className='flex justify-between'>
                 <div></div>
-                <Link to='/queries'><button className='btn btn-warning '>Explore</button></Link>
+                <Link to='/add'><button className='btn btn-warning '>Add Query</button></Link>
             </section>
 
         </div>
