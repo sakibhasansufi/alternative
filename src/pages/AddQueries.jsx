@@ -26,8 +26,8 @@ const AddQueries = () => {
             console.log(data);
             if(data.insertedId){
                 Swal.fire({
-                    title: "Good job!",
-                    text: "You clicked the button!",
+                    title: "Congratulation",
+                    text: "Data added successfully",
                     icon: "success"
                   });
             }
