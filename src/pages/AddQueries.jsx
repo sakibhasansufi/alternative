@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 
 const AddQueries = () => {
     const handleAdd = async e=>{
@@ -24,7 +25,11 @@ const AddQueries = () => {
         .then(data=>{
             console.log(data);
             if(data.insertedId){
-                
+                Swal.fire({
+                    title: "Good job!",
+                    text: "You clicked the button!",
+                    icon: "success"
+                  });
             }
         })
 
