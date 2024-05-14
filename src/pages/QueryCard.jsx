@@ -28,8 +28,7 @@ const QueryCard = ({ query }) => {
                                 icon: "success"
 
                             });
-                            const remaining = arts.filter(cof => cof._id !== _id);
-                            setArts(remaining)
+
 
                         }
                     })
@@ -48,13 +47,12 @@ const QueryCard = ({ query }) => {
                     <h1 className="text-xl font-bold text-gray-800 dark:text-white">{name}</h1>
                     <h1 className="text-xl font-medium text-gray-800 dark:text-white">{brand}</h1>
 
-                    <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{title}</p>
-
-
                     <div className="flex justify-between mt-3 item-center">
 
-                        <button className="px-2 py-1 text-xs font-bold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-600">View</button>
-                        <Link to={`update/${_id}`}>
+                        <Link to={`/detail/${_id}`}>
+                            <button className="px-2 py-1 text-xs font-bold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-600">View</button>
+                        </Link>
+                        <Link to={`/updateQuery/${_id}`}>
                             <button className="px-2 py-1 text-xs font-bold text-white uppercase transition-colors duration-300 transform bg-green-500 rounded dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-600">Update</button>
                         </Link>
                         <button onClick={() => handleDelete(_id)}

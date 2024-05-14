@@ -1,6 +1,6 @@
 
 
-const UpdateQueries = () => {
+const Detail = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const UpdateQueries = () => {
     );
 };
 
-export default UpdateQueries;
+export default Detail;
