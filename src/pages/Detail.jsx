@@ -8,10 +8,10 @@ const Detail = () => {
     const { user } = useContext(AuthContext);
     const { _id, name, brand, photo, title, reason } = viewInfo;
     return (
-        <section>
+        <section className="">
             <h2 className="text-2xl font-bold text-center mb-10">Query Details</h2>
 
-            <div className="max-w-2xl  overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div className="max-w-2xl grid grid-cols-1 md:grid-cols-2 overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
                 
                 <img className="object-cover w-full h-64" src={photo} alt="Article" />
 

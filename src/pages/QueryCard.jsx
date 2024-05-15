@@ -1,8 +1,10 @@
+
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
-const QueryCard = ({ query }) => {
+const QueryCard = ({ query, datas, setDatas }) => {
+
     const { _id, photo, name, brand, title } = query;
     const handleDelete = _id => {
         Swal.fire({
@@ -24,11 +26,14 @@ const QueryCard = ({ query }) => {
                         if (data.deletedCount > 0) {
                             Swal.fire({
                                 title: "Deleted!",
-                                text: "Your art has been deleted.",
+                                text: "Your data has been deleted.",
                                 icon: "success"
 
                             });
 
+
+                            const remaining = datas.filter(cof => cof._id !== _id);
+                            setDatas(remaining);
 
                         }
                     })
