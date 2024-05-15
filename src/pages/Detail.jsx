@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const Detail = () => {
@@ -9,6 +10,34 @@ const Detail = () => {
     const { _id, name, brand, photo, title, reason } = viewInfo;
     const handleRecommend= async e=>{
         e.preventDefault();
+        const form = e.target;
+        const title = form.title.value;
+        const name = form.name.value;
+        const image = form.image.value;
+        const reason = form.reason.value;
+        const recommended = {title,name,image,reason};
+        console.log(recommended) 
+
+
+        //send data 
+        fetch('http://localhost:5000/recommend',{
+            method : 'POST',
+            headers : {
+                'content-type' : 'application/json'
+            },
+            body : JSON.stringify(recommended)
+        })
+        .then(res=> res.json())
+        .then(data=>{
+            if(data.insertedId){
+                Swal.fire({
+                    title: "Congratulation",
+                    text: "Data added successfully",
+                    icon: "success"
+                  });
+
+            }
+        })
     }
     return (
         <section>
@@ -71,7 +100,7 @@ const Detail = () => {
                         <label htmlFor="password" className="block ">
                             Recommendation Reason
                         </label>
-                        <input type="text" name="reason" id="password" placeholder="Product Name" className="w-full px-4 py-3 rounded-md border border-indigo-300 focus:outline-none focus:ring  " />
+                        <input type="text" name="reason" id="password" placeholder="Recommendation Reason" className="w-full px-4 py-3 rounded-md border border-indigo-300 focus:outline-none focus:ring  " />
                         
                     </div>
                     <input type="submit" value="Add Recommend" className="btn btn-success">
