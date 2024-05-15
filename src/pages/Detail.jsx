@@ -9,15 +9,18 @@ const Detail = () => {
     const { _id, name, brand, photo, title, reason } = viewInfo;
     return (
         <section>
+            <h2 className="text-2xl font-bold text-center mb-10">Query Details</h2>
+
             <div className="max-w-2xl  overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+                
                 <img className="object-cover w-full h-64" src={photo} alt="Article" />
 
                 <div className="p-6">
                     <div>
-                        <span className="text-xs font-semibold text-blue-600 uppercase dark:text-blue-400">{name}</span>
-                        <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">{brand}</span>
-                        <a href="#" className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600 hover:underline" tabIndex="0" role="link">{title}</a>
-                        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{reason}</p>
+                        <span className="text-xs font-semibold text-blue-600 uppercase dark:text-blue-400">Product Name : {name}</span><br />
+                        <span className="text-xs font-medium  uppercase dark:text-blue-400">Product Brand:   {brand}</span>
+                        <a href="#" className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600 hover:underline" tabIndex="0" role="link">Query Title : {title}</a>
+                        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">Boycott Reason : {reason}</p>
                     </div>
 
                     <div className="mt-4">

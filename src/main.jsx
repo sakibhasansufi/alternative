@@ -18,6 +18,8 @@ import PrivateRoute from './pages/PrivateRoute'
 import AddQueries from './pages/AddQueries';
 import Update from './pages/Update';
 import Detail from './pages/Detail';
+import MyRecommend from './pages/MyRecommend';
+import ForMe from './pages/ForMe';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -59,6 +61,14 @@ const router = createBrowserRouter([
         path : '/detail/:id',
         element : <Detail></Detail>,
         loader : ({params})=> fetch(`http://localhost:5000/new/${params.id}`)
+      },
+      {
+        path : '/my',
+        element : <MyRecommend></MyRecommend>
+      },
+      {
+        path : '/me',
+        element : <ForMe></ForMe>
       }
       
     ]
