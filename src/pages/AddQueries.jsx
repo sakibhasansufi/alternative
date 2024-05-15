@@ -14,7 +14,7 @@ const AddQueries = () => {
 
 
         // send data 
-        fetch('http://localhost:5000/new',{
+        fetch('https://b9a11-server-side-five.vercel.app/new',{
             method : 'POST',
             headers : {
                 'content-type' : 'application/json'

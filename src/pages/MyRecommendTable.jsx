@@ -1,9 +1,9 @@
 import Swal from "sweetalert2";
 
 
-const MyRecommendTable = ({mine,del,setDel}) => {
-    const {_id,image,name,title} = mine;
-    const handleDelete= _id =>{
+const MyRecommendTable = ({ mine, del, setDel }) => {
+    const { _id, image, name, title } = mine;
+    const handleDelete = _id => {
         Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
@@ -12,23 +12,25 @@ const MyRecommendTable = ({mine,del,setDel}) => {
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes, delete it!"
-        }).then((result)=>{
-            if(result.isConfirmed){
-                fetch(`http://localhost:5000/recommend/${_id}`,{
-                    method : 'DELETE'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`https://b9a11-server-side-five.vercel.app/recommend/${_id}`, {
+                    method: 'DELETE'
                 })
-                .then(res=>res.json())
-                .then(data=>{
-                    console.log(data)
-                    if(data.deletedCount>0){
-                        Swal.fire({
-                            title: "Deleted!",
-                            text: "Your data has been deleted.",
-                            icon: "success"
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data)
+                        if (data.deletedCount > 0) {
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your data has been deleted.",
+                                icon: "success"
 
-                        });
-                    }
-                })
+                            });
+                            const remaining = del.filter(cof => cof._id !== _id);
+                            setDel(remaining);
+                        }
+                    })
             }
 
         })
@@ -53,8 +55,8 @@ const MyRecommendTable = ({mine,del,setDel}) => {
                         <td className="py-4 px-6 border-b text-xl font-medium">{name}</td>
                         <td className="py-4 px-6 border-b text-lg font-medium">{title}</td>
                         <td className="py-4 px-6 border-b text-end">
-                            <button  onClick={()=> handleDelete(_id)}
-                            className="bg-red-500 hover:scale-110 scale-100 transition-all duration-100 text-white py-2 px-4 rounded-md">Delete</button>
+                            <button onClick={() => handleDelete(_id)}
+                                className="bg-red-500 hover:scale-110 scale-100 transition-all duration-100 text-white py-2 px-4 rounded-md">Delete</button>
                         </td>
                     </tr>
 

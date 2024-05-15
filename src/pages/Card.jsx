@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const Card = () => {
     const [card, setCard] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/alter')
+        fetch('https://b9a11-server-side-five.vercel.app/alter')
             .then(res => res.json())
             .then(data => setCard(data))
     }, [])

@@ -17,7 +17,7 @@ const QueryCard = ({ query, datas, setDatas }) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/new/${_id}`, {
+                fetch(`https://b9a11-server-side-five.vercel.app/new/${_id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())

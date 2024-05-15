@@ -41,12 +41,12 @@ const router = createBrowserRouter([
       {
         path : '/queries',
         element : <Queries></Queries>,
-        loader : ()=> fetch('http://localhost:5000/new')
+        loader : ()=> fetch('https://b9a11-server-side-five.vercel.app/new')
       },
       {
         path : '/myQueries',
         element : <PrivateRoute><MyQueries></MyQueries></PrivateRoute>,
-        loader : ()=> fetch('http://localhost:5000/new')
+        loader : ()=> fetch('https://b9a11-server-side-five.vercel.app/new')
       },
       {
         path : '/add',
@@ -55,21 +55,22 @@ const router = createBrowserRouter([
       {
         path : '/updateQuery/:id',
         element : <Update></Update>,
-        loader : ({params})=> fetch(`http://localhost:5000/new/${params.id}`)
+        loader : ({params})=> fetch(`https://b9a11-server-side-five.vercel.app/new/${params.id}`)
       },
       {
         path : '/detail/:id',
         element : <Detail></Detail>,
-        loader : ({params})=> fetch(`http://localhost:5000/new/${params.id}`)
+        loader : ({params})=> fetch(`https://b9a11-server-side-five.vercel.app/new/${params.id}`)
       },
       {
         path : '/my',
         element : <MyRecommend></MyRecommend>,
-        loader : ()=> fetch('http://localhost:5000/recommend')
+        loader : ()=> fetch('https://b9a11-server-side-five.vercel.app/recommend')
       },
       {
         path : '/me',
-        element : <ForMe></ForMe>
+        element : <ForMe></ForMe>,
+        loader : ()=> fetch('https://b9a11-server-side-five.vercel.app/recommend')
       }
       
     ]

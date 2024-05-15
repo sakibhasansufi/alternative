@@ -20,7 +20,7 @@ const Detail = () => {
 
 
         //send data 
-        fetch('http://localhost:5000/recommend',{
+        fetch('https://b9a11-server-side-five.vercel.app/recommend',{
             method : 'POST',
             headers : {
                 'content-type' : 'application/json'
