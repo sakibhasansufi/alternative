@@ -6,18 +6,18 @@ const Queries = () => {
     const { user } = useContext(AuthContext);
     const newData = useLoaderData();
     return (
-        <div>
-            <section>
+        <div className="flex justify-center">
+            <section className="">
                 {
                     newData.map(data =>  <div key={data._id} className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
                         <img className="object-cover w-full h-64" src={data.photo} alt="Article" />
 
                         <div className="p-6">
                             <div>
-                                <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">{data.title}</span>
-                                <p  className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600 " tabIndex="0" role="link">{data.name}</p>
-                                <p  className="block mt-2 text-sm font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600 " tabIndex="0" role="link">{data.brand}</p>
-                                <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{data.reason}</p>
+                                <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Query Title:{data.title}</span>
+                                <p  className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600 " tabIndex="0" role="link">Product Name :{data.name}</p>
+                                <p  className="block mt-2 text-sm font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600 " tabIndex="0" role="link">Brand Name : {data.brand}</p>
+                                <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">Boycott Reason: {data.reason}</p>
                             </div>
 
                             <div className="mt-4">
